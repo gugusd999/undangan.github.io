@@ -1,0 +1,68 @@
+<style>
+	
+	.full-page{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: lightblue;
+		z-index: 200;
+		overflow: auto;
+	}
+
+
+	.login{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100px;
+		margin: auto;
+		width: 380px;
+		min-height: 200px;
+		background-color: white;
+		border-radius: 3px;
+		box-shadow: 
+			2px 2px 0 #999,
+			3px 2.5px 0 #fff,
+			4px 3.6px 5px #999
+			; 		
+	}
+
+	.logo{
+		height: 100px;
+		text-align: center;
+	}
+
+	.logo img{
+		height: 100%;
+		width: auto;
+		margin: auto;
+		margin-bottom: 20px; 
+	}
+
+</style>
+
+<div class="full-page">
+	<div class="login">
+		<div class="logo">
+			<img id="foto" src="" alt="">
+		</div>
+		<div class="row" style="margin-top: 20px;">
+			<form id="login-client">
+				<div class="input-field col s12">
+					<input id="username" name="data[username]" type="text" class="validate">
+					<label for="username">username</label>
+				</div>
+				<div class="input-field col s12">
+					<input type="password" name="data[password]" id="password" class="vallidate">
+					<label for="password">password</label>
+				</div>
+				<div class="center">
+					<button id="go-login" class="btn waves-effect green" type="button">login</button>
+					<button id="register" class="btn waves-effect blue lighten-1" type="button">sign up</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

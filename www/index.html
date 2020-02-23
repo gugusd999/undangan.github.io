@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+	<link rel="stylesheet" href="./style.css">
+
+
+    <script src="./jquery/jquery-3.4.1.js"></script>
+    <script src="./jquery/axios.min.js"></script>
+    <script src="./materialize/js/materialize.min.js"></script>
+</head>
+<body>
+	<div id="main">
+	
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">logo</a>
+				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+				<ul class="right hide-on-med-and-down">
+					<li><a root="/" href="">Dashboard</a></li>
+					<li><a root="/profile" href="">profile</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<ul class="sidenav" id="mobile-demo">
+			<li><a root="/" href="">Dashboard</a></li>
+			<li><a root="/profile" href="">profile</a></li>
+		</ul>
+
+		<div id="view">
+			
+		</div>
+
+	</div>
+
+	<div id="script">
+		
+	</div>
+
+    <script src="./router.js"></script>
+	<script>
+
+		$(document).ready(function(){
+			$(".sidenav").sidenav();
+		})
+
+		loadData.create("pages/verify.js");
+
+		myRouter.name('myFirstRouter');
+		myRouter.create({
+			path: '/'
+			,name: 'Root'
+			,page: 'pages/home.js'
+			,run: function(){
+				eval('cekDataClient()');
+				eval('home();');
+			}
+		});
+		myRouter.create({
+			path: '/buat-undangan'
+			,name: 'buat-undangan'
+			,page: 'pages/buatundangan.js'
+			,run: function(){
+				eval('cekDataClient()');
+				eval('buatundangan();');
+			}
+		});
+		myRouter.create({
+			path: '/data-pasangan-wanita'
+			,name: 'buat-undangan'
+			,page: 'pages/formpasanganwanita.js'
+			,run: function(){
+				eval('cekDataClient()');
+				eval('formpasanganwanita();');
+			}
+		});
+		myRouter.create({
+			path: '/data-pernikahan'
+			,name: 'buat-undangan'
+			,page: 'pages/formdatapernikahan.js'
+			,run: function(){
+				eval('cekDataClient()');
+				eval('formdatapernikahan();');
+			}
+		});
+		myRouter.create({
+			path: '/data-galery'
+			,name: 'buat-undangan'
+			,page: 'pages/formgalery.js'
+			,run: function(){
+				eval('cekDataClient()');
+				eval('formgalery();');
+			}
+		});
+		myRouter.create({
+			path: '/login'
+			,name: 'Contact'
+			,page: 'pages/login.js'
+			,run: function(){
+				eval('loginPage();');
+			}
+		});
+		myRouter.create({
+			path: '/register'
+			,name: 'Register'
+			,page: 'pages/register.js'
+			,run: function(){
+				eval('register();');
+			}
+		});
+		myRouter.create({
+			path: '/register-lanjutan'
+			,name: 'register Lanjutan'
+			,page: 'pages/registLanjutan.js'
+			,run: function(){
+				eval('registerLanjutan();');
+			}
+		});
+
+		myRouter.run();
+
+	</script>
+
+</body>
+</html>

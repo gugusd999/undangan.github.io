@@ -1,0 +1,65 @@
+<style>
+	.foto{
+		width: 90%;
+		height: auto;
+	}
+</style>
+<div class="row">
+	<div class="col s12">
+		<div class="card">
+			<div class="card-content center">
+				<span class="card-title">Data Pernikahan</span>
+			</div>
+		</div>
+	</div>
+	<div class="col s12">
+		<div class="card">
+			<div class="card-content">
+					<div class="row">
+						<div class="col s6">
+							<div class="row">
+								<div class="col s12 center">
+									<img id="foto-pernikahan-view" class="foto" src="" alt="">
+								</div>
+								
+							</div>
+						</div>
+						<div class="file-field input-field col s6">
+							<div class="row">
+								<div class="file-field input-field col s12">
+									<div class="btn">
+								        <span>Foto Cover</span>
+								        <input type="file" name="foto" id="foto-pernikahan">
+							      	</div>
+							      	<div class="file-path-wrapper">
+								        <input class="file-path validate" type="text">
+							      	</div>
+								</div>
+								<div class="input-field col s12">
+									<input type="hidden" name="data[user]" value="client">
+									<input id="alamat_resepsi" placeholder="inputkan alamat resepsi" type="text" name="data[alamat_resepsi]" class="validate">
+									<label class="active" for="alamat_resepsi">Almat Resepsi</label>
+								</div>
+								<div class="input-field col s12">
+									<input type="hidden" name="data[user]" value="client">
+									<input id="alamat_akad" placeholder="inputkan alamat akad" type="text" name="data[alamat_akad]" class="validate">
+									<label class="active" for="alamat_akad">Alamat Akad</label>
+								</div>
+								<div class="input-field col s12">
+									<input type="hidden" name="data[user]" value="client">
+									<input id="tanggal_acara" placeholder="inputkan tanggal acara" type="text" name="data[tanggal_acara]" class="validate">
+									<label class="active" for="tanggal_acara">Tanggal Acara</label>
+								</div>
+								<div class="col s12">
+									<button id="save-data-pernikahan" type="button" class="btn waves-effect">Next</button>
+									<button id="kembali-ke-data-wanita" style="margin-left: 20px;" type="button" class="btn waves-effect">back</button>
+									<button id="bersihkan-data-pernikahan" style="margin-left: 20px;" type="button" class="btn waves-effect">clear</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>

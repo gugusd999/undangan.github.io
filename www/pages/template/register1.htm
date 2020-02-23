@@ -1,0 +1,68 @@
+<style>
+	
+	.full-page{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: lightblue;
+		z-index: 200;
+		overflow: auto;
+	}
+
+
+	.login{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100px;
+		margin: auto;
+		width: 380px;
+		min-height: 200px;
+		background-color: white;
+		border-radius: 3px;
+		box-shadow: 
+			2px 2px 0 #999,
+			3px 2.5px 0 #fff,
+			4px 3.6px 5px #999
+			; 		
+	}
+
+	.logo{
+		height: 100px;
+	}
+
+	.logo img{
+		height: 100%;
+		width: auto;
+		margin: auto;
+		margin-bottom: 20px; 
+	}
+
+</style>
+
+<div class="full-page">
+	<div class="login">
+		<div class="logo">
+			<img src="" alt="">
+		</div>
+		<div class="row" style="margin-top: 20px;">
+			<form id="form-regis1">
+				<div class="input-field col s12">
+					<input type="hidden" name="data[user]" value="client">
+					<input id="username" placeholder="inputkan username" type="text" name="data[username]" class="validate">
+					<label class="active" for="username">username</label>
+				</div>
+				<div class="input-field col s12">
+					<input type="password" placeholder="inputkan password" id="password" name="data[password]" class="vallidate">
+					<label class="active" for="password">password</label>
+				</div>
+				<div class="center">
+					<button id="register-one" class="btn waves-effect blue lighten-1" type="button">next</button>
+					<button id="back-to-login" class="btn waves-effect blue lighten-1" type="button">login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

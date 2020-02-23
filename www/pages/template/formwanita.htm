@@ -1,0 +1,70 @@
+<style>
+	.foto{
+		width: 90%;
+		height: auto;
+	}
+</style>
+<div class="row">
+	<div class="col s12">
+		<div class="card">
+			<div class="card-content center">
+				<span class="card-title">Data Pasangan Wanita</span>
+			</div>
+		</div>
+	</div>
+	<div class="col s12">
+		<div class="card">
+			<div class="card-content">
+					<div class="row">
+						<div class="col s6">
+							<div class="row">
+								<div class="col s12 center">
+									<img id="foto-wanita-view" class="foto" src="" alt="">
+								</div>
+								
+							</div>
+						</div>
+						<div class="file-field input-field col s6">
+							<div class="row">
+								<div class="file-field input-field col s12">
+									<div class="btn">
+								        <span>foto</span>
+								        <input type="file" name="foto" id="foto-wanita">
+							      	</div>
+							      	<div class="file-path-wrapper">
+								        <input class="file-path validate" type="text">
+							      	</div>
+								</div>
+								<div class="input-field col s6">
+									<input type="hidden" name="data[user]" value="client">
+									<input id="nama" placeholder="inputkan nama" type="text" name="data[nama]" class="validate">
+									<label class="active" for="nama">nama</label>
+								</div>
+								<div class="input-field col s6">
+									<input type="hidden" name="data[user]" value="client">
+									<input id="umur" placeholder="inputkan umur" type="text" name="data[umur]" class="validate">
+									<label class="active" for="umur">umur</label>
+								</div>
+								<div class="input-field col s6">
+									<input type="hidden" name="data[user]" value="client">
+									<input id="nama_ayah" placeholder="inputkan nama ayah" type="text" name="data[nama_ayah]" class="validate">
+									<label class="active" for="nama_ayah">nama ayah</label>
+								</div>
+								<div class="input-field col s6">
+									<input type="hidden" name="data[user]" value="client">
+									<input id="nama_ibu" placeholder="inputkan nama ibu" type="text" name="data[nama_ibu]" class="validate">
+									<label class="active" for="nama_ibu">nama ibu</label>
+								</div>
+								<div class="col s12">
+									<button id="save-data-wanita" type="button" class="btn waves-effect">Next</button>
+									<button id="kembali-ke-data-pria" style="margin-left: 20px;" type="button" class="btn waves-effect">back</button>
+									<button id="bersihkan-data-wanita" style="margin-left: 20px;" type="button" class="btn waves-effect">clear</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
